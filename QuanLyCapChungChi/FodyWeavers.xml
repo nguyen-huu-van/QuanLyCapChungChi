@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Weavers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="FodyWeavers.xsd">
+	<Costura>
+		<ExcludeAssemblies>
+			<!-- Liệt kê các assembly của ReportViewer cần loại trừ -->
+			Microsoft.ReportViewer.Common
+			Microsoft.ReportViewer.DataVisualization
+			Microsoft.ReportViewer.Design
+			Microsoft.ReportViewer.ProcessingObjectModel
+			Microsoft.ReportViewer.WinForms
+			Microsoft.ReportViewer.WebForms
+			Microsoft.SqlServer.Types
+			<!-- Thêm các assembly khác nếu cần -->
+		</ExcludeAssemblies>
+		<!-- Bạn có thể giữ lại các cấu hình Costura khác nếu có -->
+	</Costura>
+	<!-- Các weaver khác của Fody (nếu có) sẽ nằm ở đây -->
+</Weavers>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet3" targetNamespace="http://tempuri.org/DataSet3.xsd" xmlns:mstns="http://tempuri.org/DataSet3.xsd" xmlns="http://tempuri.org/DataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QuanLyCapChungChiConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QuanLyCapChungChiConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QuanLyCapChungChi.Properties.Settings.GlobalReference.Default.QuanLyCapChungChiConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QuanLyCapChungChiConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT HocVien.HoTen, KhoaThi.TenKhoaThi, KetQuaThi.DiemSo, KetQuaThi.DiemSo2, KetQuaThi.DiemSo3
+FROM     KetQuaThi INNER JOIN
+                  HocVien ON KetQuaThi.MaHocVien = HocVien.MaHocVien INNER JOIN
+                  KhoaThi ON KetQuaThi.MaKhoaThi = KhoaThi.MaKhoaThi</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="HoTen" DataSetColumn="HoTen" />
+              <Mapping SourceColumn="TenKhoaThi" DataSetColumn="TenKhoaThi" />
+              <Mapping SourceColumn="DiemSo" DataSetColumn="DiemSo" />
+              <Mapping SourceColumn="DiemSo2" DataSetColumn="DiemSo2" />
+              <Mapping SourceColumn="DiemSo3" DataSetColumn="DiemSo3" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet3" msprop:Generator_UserDSName="DataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HoTen" msprop:Generator_ColumnVarNameInTable="columnHoTen" msprop:Generator_ColumnPropNameInRow="HoTen" msprop:Generator_ColumnPropNameInTable="HoTenColumn" msprop:Generator_UserColumnName="HoTen">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TenKhoaThi" msprop:Generator_ColumnVarNameInTable="columnTenKhoaThi" msprop:Generator_ColumnPropNameInRow="TenKhoaThi" msprop:Generator_ColumnPropNameInTable="TenKhoaThiColumn" msprop:Generator_UserColumnName="TenKhoaThi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DiemSo" msprop:Generator_ColumnVarNameInTable="columnDiemSo" msprop:Generator_ColumnPropNameInRow="DiemSo" msprop:Generator_ColumnPropNameInTable="DiemSoColumn" msprop:Generator_UserColumnName="DiemSo" type="xs:double" minOccurs="0" />
+              <xs:element name="DiemSo2" msprop:Generator_ColumnVarNameInTable="columnDiemSo2" msprop:Generator_ColumnPropNameInRow="DiemSo2" msprop:Generator_ColumnPropNameInTable="DiemSo2Column" msprop:Generator_UserColumnName="DiemSo2" type="xs:double" minOccurs="0" />
+              <xs:element name="DiemSo3" msprop:Generator_ColumnVarNameInTable="columnDiemSo3" msprop:Generator_ColumnPropNameInRow="DiemSo3" msprop:Generator_ColumnPropNameInTable="DiemSo3Column" msprop:Generator_UserColumnName="DiemSo3" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
