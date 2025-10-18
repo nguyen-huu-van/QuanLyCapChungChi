@@ -35,4 +35,5 @@ Phần mềm Quản lý Cấp Chứng chỉ (QuanLyCapChungChi)
 
 
 **Màn hình quản lý thí sinh:**
-<img width="903" height="873" alt="image" src="https://github.com/user-attachments/assets/1822eba8-3ab0-439f-a153-325566fde7b3" />
+<img width="890" height="486" alt="image" src="https://github.com/user-attachments/assets/204c6899-1756-4214-9a42-d2f627d93113" />
+
